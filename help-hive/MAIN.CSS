@@ -1,0 +1,887 @@
+*{
+    padding:0;
+    margin:0;
+ 
+}
+
+
+/* Splash Screen Styling */
+#splash {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ede8d0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: thin;
+    font-size:2rem;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Fade-out animation for text */
+.fade-out {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+/* Delayed fade-out */
+.delay {
+    transition-delay: 0.2s;
+}
+
+
+@keyframes appear{
+    from{
+        opacity:0;
+        scale:0.5;
+    }
+    to{
+        opacity:1;
+        scale:1;
+    }
+}
+
+
+
+.navbar{
+    width:100%;
+    height:5rem;
+    display:flex;
+    justify-content:space-around;
+    background-color:#ede8d0;
+    align-items:center;
+}
+.m0{
+    font-family: "Caesar Dressing", system-ui;
+    font-weight:400;
+}
+
+.m1{
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: thin;
+}
+.m1 ul{
+    list-style: none;
+    display:flex;
+
+}
+.m1 ul li a{
+    text-decoration: none;
+    color:black;
+    padding:0.8rem;
+    font-size:1.2rem;
+}
+
+.m1 ul li a:hover{
+color:#c6bf9f;
+}
+
+.d1{
+    display:flex;
+}
+.d1 button{
+ margin-left:1.5rem;
+}
+
+.m2 button{
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color:#d9d5be;
+    border:none;
+    padding-right:1.5rem;
+    padding-left:1.5rem;
+    align-items:center;
+    border-radius:2rem;
+    font-size:1.2rem;
+    padding-top:0.2rem;
+    padding-bottom:0.2rem;
+}
+
+.m2 button a:hover{
+    color:#c6bf9f;
+}
+.m3 button{
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color:#d9d5be;
+    border:none;
+    align-items:center;
+    padding-right:1.5rem;
+    padding-left:1.5rem;
+    border-radius:2rem;
+    font-size:1.2rem;
+    padding-top:0.2rem;
+    padding-bottom:0.2rem;
+}
+.m3 button a:hover{
+    color:#c6bf9f;
+    transform: scale(1.1);
+}
+.m4 button{
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color:#d9d5be;
+    border:none;
+    align-items:center;
+    padding-right:1.5rem;
+    padding-left:1.5rem;
+    border-radius:2rem;
+    padding-top:0.2rem;
+    padding-bottom:0.2rem;
+    font-size:1.2rem;
+}
+.m4 button a:hover{
+    color:#c6bf9f;
+}
+.m2 button a{
+    text-decoration:none;
+    color:black;
+}
+
+.m4 button a{
+    text-decoration:none;
+    color:black;
+}
+.m3 button a{
+    text-decoration:none;
+    color:black;
+}
+
+.m5 video{
+    width: 90%;
+display:block;
+margin:0 auto;
+justify-content:center;
+border-radius:1rem;
+margin-top:5rem;
+}
+
+.m6{
+    display:flex;
+    gap:3rem;
+    margin-top:3rem;
+    justify-content:center;
+   margin-bottom:2rem;
+   overflow:scroll;
+   padding:2rem;
+   animation: fadeIn 5s linear;
+animation-timeline: view();
+animation-range:entry 0;
+
+}
+
+.m6 img{
+    height:11rem;
+    justify-content:center;
+    align-items:Center;
+    border-top-left-radius:1rem;
+    border-top-right-radius:1rem;
+}
+.m01 a{
+    font-size:0.9rem;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding:0.5rem;
+    text-decoration:none;
+    color:black;
+
+
+}
+
+.m02 a{
+    font-size:1.2rem;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding:0.5rem;
+    text-decoration:none;
+    color:black;
+}
+
+.m03 a{
+    font-size:1.2rem;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding:0.5rem;
+    text-decoration:none;
+    color:black;
+}
+
+.m04 a{
+    font-size:1.2rem;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding:0.5rem;
+    text-decoration:none;
+color:black;
+}
+
+
+.m05 a{
+    font-size:1.2rem;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding:0.5rem;
+    text-decoration:none;
+    color:black;
+}
+.m06 a{
+    font-size:1.2rem;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding:0.5rem;
+    text-decoration:none;
+    color:black;
+}
+.m07 a{
+    font-size:1.2rem;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding:0.5rem;
+    text-decoration:none;
+    color:black;
+}
+
+
+.m01{
+    
+  border-radius: 1rem;
+  height:13rem;
+  text-align:center;
+   width:11rem;
+   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+}
+.m02{
+  border-radius: 1rem;
+  height:13rem;
+  text-align:center;
+   width:11rem;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+
+}
+.m03{
+  border-radius: 1rem;
+  height:13rem;
+  text-align:center;
+   width:11rem;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+
+}
+.m04{
+  border-radius: 1rem;
+  height:13rem;
+   width:11rem;
+   text-align:center;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+
+}
+.m05{
+  border-radius: 1rem;
+  height:13rem;
+   width:11rem;
+   text-align:center;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+
+}
+.m06{
+  border-radius: 1rem;
+  height:13rem;
+   width:11rem;
+   text-align:center;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+
+}
+.m07{
+  border-radius: 1rem;
+  height:13rem;
+  width:11rem;
+  text-align:center;
+   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.m7 h1{
+    margin-top: 10rem;
+    font-size:6rem;
+    font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:200;
+  font-style: thin;
+    text-transform: uppercase;
+    text-align: center;
+    color:black;
+   
+}
+.m7 h2{
+    margin-top: 4rem;
+    font-size:2rem;
+    font-family: "Tourney", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:100;
+    font-style:normal;
+    text-transform: uppercase;
+    text-align: center;
+    color:black;
+}
+
+.m9 h1{
+    margin-top: 12rem;
+    font-size:3rem;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+margin-left:5rem;
+color:black;
+animation: fadeIn 10s linear;
+animation-timeline: view();
+animation-range:entry 0;
+}
+
+.m9 p{
+    font-size:1.5rem;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+margin-left:5rem;
+padding-top:1.5rem;
+color:black;
+font-family: "Staatliches", sans-serif;
+font-weight: 400;
+font-style: normal;
+animation: fadeIn 10s linear;
+animation-timeline: view();
+animation-range:entry 0;
+}
+
+.m8{
+    display:flex;
+    animation: fadeIn 5s linear;
+    animation-timeline: view();
+    animation-range:entry 0;
+    align-items:center;
+}
+
+.m001{
+    padding:10rem;
+    animation: fadeIn 5s linear;
+    animation-timeline: view();
+    animation-range:entry 0;
+}
+.m001 img{
+    height:40rem;
+    border-radius:2rem;
+    animation: fadeIn 5s linear;
+    animation-timeline: view();
+    animation-range:entry 0;
+}
+.m002 h1{
+    font-size:5rem;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    color:black;
+    text-align:center;
+    animation: fadeIn 5s linear;
+    animation-timeline: view();
+    animation-range:entry 0;
+}
+.m002 h2{
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    padding-top:2rem;
+    text-align:center;
+    animation: fadeIn 5s linear;
+    animation-timeline: view();
+    animation-range:entry 0;
+}
+
+.m10{
+    display:flex;
+    background:#ede8d0;
+    height:15rem;
+    margin-top:15rem;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-bottom:5rem;
+    animation: fadeIn 5s linear;
+    animation-timeline: view();
+    animation-range:entry 0;
+}
+
+.b1 button{
+border:none;
+background-color:black;
+padding:2rem;
+border-radius:2rem;
+transition:transform 0.3s ease-in-out;
+animation: appear 5s linear;
+animation-timeline: view();
+animation-range:entry 0;
+}
+
+.b1 button a{
+    text-decoration:none;
+color:white;
+font-size:2rem;
+font-family: "Staatliches", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+}
+
+.b1 button:hover{
+    transform:scale(1.05);
+}  
+
+.b2 button{
+    border:none;
+    background-color:white;
+    padding:2rem;
+    border-radius:2rem;
+    transition:transform 0.3s ease-in-out;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range:entry}
+  
+    
+    .b2 button a{
+        text-decoration:none;
+    color:black;
+    font-size:2rem;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    .b2 button:hover{
+        transform:scale(1.05);
+    }
+    .m10  .b3 h1{
+        font-size:4rem;
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        color:black;
+        text-align:center;
+        animation: appear 5s linear;
+animation-timeline: view();
+animation-range:entry 0;
+    }
+
+
+
+    .m10 .b3 h3{
+        font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+        text-transform: uppercase;
+        color:black;
+        animation: appear 5s linear;
+animation-timeline: view();
+animation-range:entry 0;
+    }
+
+    .m0001 h1{
+        margin-top:6rem;
+        font-size:3rem;
+        font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+        text-transform: uppercase;
+        color:black;
+        font-weight:100;
+        margin-left:5rem;
+        animation: fadeIn 5s linear;
+animation-timeline: view();
+animation-range:entry 0;
+    }
+    .m11 {
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+        animation: appear 5s linear;
+animation-timeline: view();
+animation-range:entry 0;
+    }
+
+    .m11 i{
+        font-size:5rem;
+        color:black;
+        margin-top:4rem;
+        margin-left:1rem;
+        animation: appear 5s linear;
+animation-timeline: view();
+animation-range:entry 0;
+    }
+    .m11 p{
+      margin-top:2rem;
+      font-family: "Staatliches", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+        text-transform: uppercase;
+        color:black;
+        font-weight:100;
+        font-size:1.2rem;
+        animation: appear 5s linear;
+animation-timeline: view();
+animation-range:entry 0;
+    }
+
+    .m101 button{
+        border:none;
+        padding:1rem;
+        display:block;
+        margin:0 auto;
+        border-radius:1rem;
+        transition:transform 0.3s ease-in-out;
+        margin-top:5rem;
+        animation: appear 5s linear;
+animation-timeline: view();
+animation-range:entry 0;
+    }
+
+    .m101 button a{
+text-decoration:none;
+color:black;
+font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+font-size:1.5rem;
+    }
+
+
+.pro{
+    margin-top:15rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    animation: fadeIn 10s linear;
+animation-timeline: view();
+animation-range:entry 0;
+}
+    .pro video{
+width:45%;
+border-radius:1.2rem;
+
+    }
+
+    .pro .p1 h1{
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        color:black;
+        font-weight:100;
+        font-size:7rem; 
+    }
+
+    .pro .p1 p{
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        color:black;
+        font-weight:100;
+        font-size:1.5rem; 
+        line-height: 3rem;
+        margin-top:2rem
+    }
+
+    .scroll-container {
+        width: 100%;
+        overflow: hidden;
+ 
+   margin-bottom:5rem;
+        padding: 1rem 0;
+        position: relative;
+        white-space: nowrap;
+    }
+    
+    .scroll-content {
+        display: flex;
+        gap: 4rem; 
+        animation: scrollText 20s linear infinite;
+        width: max-content;
+       }
+    
+    .scroll-content h1 {
+        font-size: 2rem;
+        font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+        color:black;
+        
+    }
+    
+    @keyframes scrollText {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    .used{
+        padding: 1rem;
+        margin-top:15rem;
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: thin;
+        font-size:2rem;
+        background-color:#ede8d0;
+        text-align:end;
+        height:10rem;
+        align-items:center;
+        margin-bottom:10rem;
+       
+    }
+
+    .used h1{
+        animation: fadeIn 10s linear;
+        animation-timeline: view();
+        animation-range:entry 0;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+
+    .post .pp11 img{
+
+width: 100%;
+height: auto;
+margin: 0 auto;
+display:block;
+animation: fadeIn 5s linear;
+animation-timeline: view();
+animation-range:entry 0;
+    }
+    @media (min-width: 768px) {
+        .post .pp11 img {
+            width: 80%; 
+        }
+    }
+
+    .post .linkk {
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: thin;
+        font-size:1.5rem; 
+        padding-left:10rem;
+        padding-top:3rem;
+        animation: fadeIn 10s linear;
+        animation-timeline: view();
+        animation-range:entry 0;
+    }
+
+    .post .aaa a{
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: thin;
+        font-size:2rem; 
+        padding-left:10rem;
+        text-decoration:none;
+        color:#cfcab3;
+        animation: fadeIn 10s linear;
+        animation-timeline: view();
+        animation-range:entry 0;
+    }
+
+    .post .aaa i{
+        font-size:1.7rem;
+        color:#ede8d0;
+        animation: fadeIn 10s linear;
+        animation-timeline: view();
+        animation-range:entry 0;
+    }
+
+
+    .fooooter{
+        display:flex;
+        background-color:#ede8d0;
+        height:20rem;
+        width:100%;
+        margin-top:15rem;
+        justify-content:space-evenly;
+        overflow:hidden;
+        align-items:center;
+    }
+
+    @media (min-width: 768px) {
+        .fooooter {
+            width: 100%; 
+        }
+    }
+
+    .fooooter .f1 h1{
+        font-family: "Caesar Dressing", system-ui;
+        font-weight:400;
+        font-size:3rem;
+        align-items:center;
+
+    
+    }
+    .fooooter .f1 img{
+        height:3rem;
+        display:block;
+        margin:0 auto;
+    }
+
+
+    .fooooter .Volunteers h1{
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: thin;
+    }
+
+    .fooooter .about h1{
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: thin;
+    }
+
+    .fooooter .prmsns h1{
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: thin;
+    }
+    .fooooter ul {
+        list-style: none;
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: thin;
+    }
+
+    .fooooter ul li{
+        margin-top:1rem;
+    }
+    
+    .fooooter ul li a{
+        text-decoration:none;
+        color:black;
+    }
+ 
+    .f2{
+        display:flex;
+        background-color:#ede8d0;
+        height:2rem;
+        width:100%;
+        justify-content:space-evenly;
+        overflow:hidden;
+        align-items:Center;
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: thin;
+    }
+.f2 a{
+    color:black;
+    margin-left:3rem;
+}
+
+.line{
+    width:100%;
+    height:0.1rem;
+    background-color:black;
+    opacity: 0.5;
+}
+
+.p1 a{
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: thin;
+        font-size:2rem; 
+        text-decoration:none;
+        color:#cfcab3;
+        animation: fadeIn 10s linear;
+        animation-timeline: view();
+        animation-range:entry 0;
+    }
+
+  
+    .chatbot{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-top:10rem;
+    }
+
+    .botimg img{
+        height:30rem;
+        width:100%;
+    }
+
+    .txtbot h1{
+        font-size:5rem;
+        font-family: "Staatliches", sans-serif;
+        font-weight: 400;
+        font-style: thin;
+        padding-left:2rem;
+    }
+
+  .txtbot h2{
+    font-size:2rem;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: thin;
+    padding-left:2rem;
+  }
+  .txtbot button{
+    padding-left:2rem;
+    padding-right:2rem;
+    border:none;
+    border-radius:2rem;
+    background:#ede8d0;
+    margin-left:2rem;
+    margin-top:1rem;
+font-size:2rem;
+transition:transform 0.3s ease-in-out;
+  }
+
+  .txtbot button a{
+    text-decoration:none;
+color:black;
+font-family: "Staatliches", sans-serif;
+font-weight: 400;
+font-style: thin;
+
+  }
+
+  .txtbot button:hover{
+
+transform:scale(1.1);
+  }
